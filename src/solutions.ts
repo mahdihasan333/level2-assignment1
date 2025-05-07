@@ -1,8 +1,8 @@
-function formatString(input: string, toUpper: boolean = true): string{
-    if(toUpper === true){
-        return input.toUpperCase()
+function formatString(input: string, toUpper?: boolean): string{
+    if(toUpper === false){
+        return input.toLowerCase()
     }
     else{
-        return input.toLowerCase()
+        return input.toUpperCase()
     }
 }
